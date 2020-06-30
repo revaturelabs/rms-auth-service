@@ -59,8 +59,12 @@ public class MockDataInitializer implements CommandLineRunner {
                 "Connell", "robert.connell@revature.com", Arrays.asList(Role.TRAINER), metadata);
         userRepo.save(usfTrainer4).block();
 
-        AppUser locked = new AppUser("5e70e8e8d798ce32e0ce9b6c", "locked", "revature", "Locked",
-                "User", "wezley.singleton@revature.com", Arrays.asList(Role.LOCKED), metadata);
+        AppUser stgMngr = new AppUser("5e70e8e8d798ce32e0ce9b6c", "jseals", "revature", "Julie",
+                "Seals", "locked.account@revature.com", Arrays.asList(Role.STG_MNGR), metadata);
+        userRepo.save(stgMngr).block();
+
+        AppUser locked = new AppUser("5e70e8e8d798ce32e0ce9b6d", "locked", "revature", "Locked",
+                "User", "locked.user@revature.com", Arrays.asList(Role.LOCKED), metadata);
         userRepo.save(locked).block();
 
         System.out.println("DATA SOURCE INIT COMPLETE");

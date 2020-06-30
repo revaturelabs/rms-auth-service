@@ -19,7 +19,8 @@ import java.util.Objects;
         "password",
         "firstName",
         "lastName",
-        "email"
+        "email",
+        "metadata"
 })
 public class AppUser extends Resource {
 

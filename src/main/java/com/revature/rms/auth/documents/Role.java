@@ -10,6 +10,7 @@ public enum Role {
     TRNG_MNGR("Training Site Manager"),
     BLDG_MNGR("Building Manager"),
     TRAINER("Trainer"),
+    STG_MNGR("Staging Manager"),
     LOCKED("Locked");
 
     private String roleName;
